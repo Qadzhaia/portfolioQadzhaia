@@ -59,6 +59,8 @@ body {
   margin: 0 0 24px;
   font-size: 80px;
   line-height: 96px;
+  animation: blur 1.75s ease-out 1;
+  text-shadow: 0px 0px 2px #fff, 0px 0px 7px #fff;
 }
 
 .hero-image p {
@@ -69,6 +71,7 @@ body {
 
 .intro {
   margin: 0 0 120px;
+  padding-top: 120px;
 }
 
 .subheading {
@@ -114,20 +117,59 @@ body {
   background-image: url("img/icon-css.svg");
 }
 
+.skill-JS {
+  background-image: url("img/icon-javascript.svg");
+}
+
+.skill-teamwork {
+  background-image: url("img/icon-teamwork.svg");
+}
+
+.skill-tilda{
+  background-image: url("img/icon-tilda.svg");
+}
+
+.skill-git{
+  background-image: url("img/icon-git.svg");
+}
+
+.about-me {
+  padding-top: 100px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: left;
+  line-height: 30px;
+}
+
+blockquote {
+  border-top: 1px solid #6a2cce;
+  padding-left: 14px;
+  border-left: 2px solid #6a2cce;
+  color: #ffffff;
+}
+
+.skills {
+  margin-top: 100px;
+}
+
 .level {
-  margin: 4px 0 16px;
-  padding: 0;
+  margin: 10px 0 40px;
   height: 14px;
   font-size: 0;
-  background-color: #080208;
+  color: #712073;
+  text-align: right;
+  background-color: #7c1030;
   border: 1px solid #712073;
   border-radius: 8px;
+  overflow: hidden;
 }
+
 
 .level div {
   margin: 1px;
   height: 12px;
-  background-color: #fea18d;
+  background-color: #73bd37;
   border-radius: 6px;
 }
 
@@ -186,4 +228,28 @@ body {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone.svg");
+}
+
+
+@keyframes blur {
+  from {
+    text-shadow: 0px 0px 10px #fff,
+      0px 0px 10px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
 }
